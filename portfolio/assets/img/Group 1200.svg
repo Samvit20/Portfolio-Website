@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="766.801" height="997.595" viewBox="0 0 766.801 997.595">
+  <g id="Group_1200" data-name="Group 1200" transform="translate(0.017 -3731.672)">
+    <path id="Icon_ionic-md-musical-notes" data-name="Icon ionic-md-musical-notes" d="M89.828,4.5V233.465a75.711,75.711,0,0,0-23.643-3.644C32.143,229.82,4.5,253.908,4.5,287.95s27.643,57.863,61.685,57.863,61.863-25.065,61.863-61.419V125.382H307.594V233.465a75.711,75.711,0,0,0-23.643-3.644c-34.042,0-61.685,24.088-61.685,58.13s27.643,57.863,61.685,57.863,61.863-25.065,61.863-61.419V4.5ZM307.594,89.828H128.048V42.72H307.594Z" transform="translate(469.55 4256.877) rotate(30)" fill="#22c6c6" opacity="0.2"/>
+    <path id="Icon_ionic-md-musical-note" data-name="Icon ionic-md-musical-note" d="M99.275,4.5V163.256a60.051,60.051,0,1,0,30.045,51.908V64.66h60.23V4.5Z" transform="translate(-9.563 3862.522) rotate(-45)" fill="#22c6c6" opacity="0.2"/>
+  </g>
+</svg>

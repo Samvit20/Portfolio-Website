@@ -1,0 +1,774 @@
+body{
+  font-family: 'Poppins', sans-serif;
+    background-color:black;
+    overflow-x: hidden;
+}
+#up-arrow{
+  width: 50%;
+}
+html {
+  scroll-behavior: smooth;
+}
+  .wrapper{
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform:translate(-50%, -20%);
+  }
+  .wrapper .icon{
+    margin:20px;
+  }
+  
+  /* nav-icon-5 */
+  .nav-icon-5{
+    width: 35px;
+    height: 30px;
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  @media(min-width:1000px){
+    .nav-icon-5{
+    margin: 30px 10px;
+    }
+  }
+
+  .nav-icon-5 span{
+    background-color:#22C6C6;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:100%;
+    height: 4px;
+    transition-duration: 200ms;
+  }
+  .nav-icon-5 span:nth-child(1){
+    top:0px;
+    left: 0px;
+  }
+  .nav-icon-5 span:nth-child(2){
+    top:13px;
+    left: 0px;
+    opacity:1;
+    width:70%;
+  }
+  .nav-icon-5 span:nth-child(3){
+    bottom:0px;
+    left: 0px;
+  }
+  
+  .nav-icon-5:not(.open):hover span:nth-child(1){
+    transform: scaleX(.8);
+  }
+  .nav-icon-5:not(.open):hover span:nth-child(2){
+    transform: scaleX(.4);
+    transform:translateX(50%);
+  }
+  .nav-icon-5:not(.open):hover span:nth-child(3){
+    transform: scaleX(.8);
+  }
+  .nav-icon-5.open span:nth-child(1){
+    opacity:0;
+    transform: rotate(45deg);
+    top: 13px;
+    
+  }
+  .nav-icon-5.open span:nth-child(2){
+    opacity:1;
+  }
+  .nav-icon-5.open span:nth-child(3){
+      opacity:0;
+    transform: rotate(-45deg);
+    top: 13px;
+  }
+  
+
+
+ 
+
+
+
+  @media(min-width:300px){
+  .topnav {
+    overflow-x: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+}
+@media(min-width:1000px){
+    .topnav {
+      overflow-x: hidden;
+      background-color: #333;
+      width: 20%;
+    }
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #22C6C6;
+    color: black;
+  }
+  
+  .active {
+    background-color: black;
+    color: white;
+  }
+  @media(min-width:300px){
+      
+  #name{
+      position: absolute;
+      display: inline-block;
+      text-align: center;
+      margin-left:15%;
+      padding-left: 6%;
+      font-size:23px;
+      top: 1%;
+      font-family: 'Montserrat', sans-serif;
+  }
+}
+@media(min-width:1000px){
+      
+    #name{
+        position: absolute;
+        margin-left: 45%;
+        font-size:50px;
+        top: 0%;
+        left: 25%;
+        z-index:2;
+        padding-left: 0%;
+    }
+  }
+  @media(min-width:300px){
+    
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      width: 10%;
+      border-width: 20px black;
+      outline: none;
+      background-color:  #FFFFFF;
+      color: white;
+      cursor: pointer;
+      padding-top: 2px;
+      border-radius: 50px;
+    }
+    
+    #myBtn:active {
+      background-color:#22C6C6;
+    }
+
+    .dash{
+      color: white;
+      font-weight: 4000;
+      margin-right: 2%;
+    }
+    
+    #abthead{
+      font-family: 'Montserrat', sans-serif;
+      color:white;
+      font-weight:600;
+    }
+    #abtdesc{
+      color:#21E0E0;
+      font-family: poppins;
+      overflow-x: hidden;
+      margin-right: 1%;
+    }
+    #abtpic{
+
+      width:80%;
+      margin-left:10%;
+      display:inline-block;
+      text-align: center;
+    }
+    #about{
+      margin-left: 5%;
+      font-size: large;
+    }
+    #writ{
+      margin-left: 5%;
+      font-size: large;
+    }
+    #writerhead{
+      font-family: 'Montserrat', sans-serif;
+      color:white;
+      font-weight:600;
+    }
+    #writerdesc{
+      color:#21E0E0;
+      font-family: poppins;
+      overflow-x: hidden;
+      margin-right: 0%;
+    
+    }
+    #writerpic{
+
+      width:80%;
+      margin-left:10%;
+      display:inline-block;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 20%;
+    }
+    #dancerhead{
+      font-family: 'Montserrat', sans-serif;
+      color:white;
+      font-weight:600;
+    }
+    #dancerdesc{
+      color:#21E0E0;
+      font-family: poppins;
+      overflow-x: hidden;
+      margin-right: 1%;
+    }
+    #dancerpic{
+
+      width:80%;
+      margin-left:10%;
+      display:inline-block;
+      text-align: center;
+    }
+    #dance{
+      margin-left: 5%;
+      font-size: large;
+    }
+    #dancersvg{
+      display: none;
+    }
+    
+    #sing{
+      margin-left: 5%;
+      font-size: large;
+    }
+    #singerhead{
+      font-family: 'Montserrat', sans-serif;
+      color:white;
+      font-weight:600;
+    }
+    #singerdesc{
+      color:#21E0E0;
+      font-family: poppins;
+      overflow-x: hidden;
+      margin-right: 0%;
+    
+    }
+    #singerpic{
+
+      width:80%;
+      margin-left:10%;
+      display:inline-block;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 0%;
+    }
+    #singersvg{
+      display:none;
+    }
+
+
+    #leaderhead{
+      font-family: 'Montserrat', sans-serif;
+      color:white;
+      font-weight:600;
+    }
+    #leaderdesc{
+      color:#21E0E0;
+      font-family: poppins;
+      overflow-x: hidden;
+      margin-right: 1%;
+    }
+    #leaderpic{
+
+      width:80%;
+      margin-left:10%;
+      display:inline-block;
+      text-align: center;
+    }
+    #lead{
+      margin-left: 5%;
+      font-size: large;
+    }
+    #leadersvg{
+      display: none;
+    }
+
+
+    #stud{
+      margin-left: 5%;
+      font-size: large;
+    }
+    #studenthead{
+      font-family: 'Montserrat', sans-serif;
+      color:white;
+      font-weight:600;
+    }
+    #studentdesc{
+      color:#21E0E0;
+      font-family: poppins;
+      overflow-x: hidden;
+      margin-right: 0%;
+    
+    }
+    #studentpic{
+
+      width:80%;
+      margin-left:10%;
+      display:inline-block;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 0%;
+    }
+   
+
+  #hbhead{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight:600;
+  }
+  #hbdesc{
+    color:#21E0E0;
+    font-family: poppins;
+    overflow-x: hidden;
+    margin-right: 1%;
+  }
+  #hbpic{
+
+    width:80%;
+    margin-left:10%;
+    margin-top: -10%;
+    display:inline-block;
+    text-align: center;
+  }
+  #hum{
+    margin-left: 5%;
+    font-size: large;
+  }
+  #hbsvg{
+    display: none;
+  }
+  #hbsvg2{
+    display: none;
+  }
+
+  #testhead{
+    margin-left: 5%;
+    margin-top: -5%;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    font-weight:600;
+    font-size:27px;
+  }
+  .test1{
+    color:#FFFFFF;
+    font: normal normal 18px Poppins;
+    letter-spacing: 0px;
+    color: white;
+    overflow-x: hidden;
+    margin-right: 1%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+  }
+  .test2{
+    margin-left: 5%;
+    font: normal normal 18px Poppins;
+    color: #21E0E0;
+    margin-right: 2%;
+    margin-top: -7%;
+    margin-bottom: 5%;
+  }
+
+  #testimg{
+    display: none;
+  }
+
+  #footer{
+    margin-top: 10%;
+    margin-bottom: 0%;
+    background-color: #22C6C6;
+    width: 100%;
+    margin-left: -2%;
+    padding-left: 4.1%;
+    padding-bottom: 15%;
+    padding-top: 2%;
+    text-align: center;
+    margin-right: 0%;
+  }
+ 
+  #footname{
+    margin-right: 2%;
+  }
+  .footcon{
+    margin-right: 2%;
+    font: normal normal medium Montserrat;
+  }
+  #foot1{
+    font-size: x-large;
+    font-weight: 600;
+  }
+  #foot2{
+    font-weight: 600;
+    font-size: large;
+    margin-top: -4%;
+  }
+  #conicon{
+    width: 4%;
+  }
+  #gmailblack{
+    margin-right: 2%;
+    width: 38.73px;
+    margin-bottom: 0.4%;
+  }
+  #igblack{
+    width: 35.73px;
+    margin-left: 0%;
+    margin-right: 3%;
+    margin-top: 1%;
+  }
+  
+  }
+  @media(min-width:1000px){
+
+    #abthead{
+      font-size: 40px;
+      margin-left: 6%;
+      margin-top: 5%;
+    }
+    #abtdesc{
+      margin-left: 6%;
+      margin-top: 1%;
+      margin-right:56%;
+      font-size: x-large;
+    }
+    #abtpic{
+      width:404.31px;
+      margin-left: 60%;
+      margin-top: -28%;
+    }
+    #writerhead{
+      font-size: 40px;
+      margin-left: 55%;
+      margin-top: 5%;
+    }
+    #writerdesc{
+      margin-left:55%;
+      margin-top: 1%;
+      font-size: x-large;
+      margin-right: 5%;
+    }
+    #writerpic{
+      width:504.31px;
+      margin-left: 10%;
+      margin-bottom: 2%;
+      margin-top: -35%;
+    }
+    #writ{
+      margin-left: 0%;
+      font-size: large;
+      margin-bottom:2%
+    }
+    #about{
+      margin-bottom: 2%;
+    }
+    #dancerhead{
+      font-size: 40px;
+      margin-left: 6%;
+      margin-top: 5%;
+    }
+    #dancerdesc{
+      margin-left: 6%;
+      margin-top: 1%;
+      margin-right:48%;
+      font-size: x-large;
+    }
+    #dancerpic{
+      width:404.31px;
+      margin-left: 60%;
+      margin-top: -45%;
+      margin-bottom:5%;
+      z-index: 1;
+    }
+    #dance{
+      margin-bottom: 2%;
+    }
+    #dancersvg{
+      width:490px;
+      margin-left: -48%;
+      margin-right: 0%;
+      margin-top: -35%;
+      margin-bottom:5%;
+      display: inline-flex;
+      position: absolute;
+      z-index: -1;
+    }
+
+    #singerhead{
+      font-size: 40px;
+      margin-left: 55%;
+      margin-top: 5%;
+    }
+    #singerdesc{
+      margin-left:55%;
+      margin-top: 5%;
+      font-size: x-large;
+      margin-right: 5%;
+      margin-bottom: 5%;
+    }
+    #singerpic{
+      width:504.31px;
+      margin-top: -70%;
+      margin-bottom:-1%;
+      z-index: 1;
+    }
+    #sing{
+      margin-left: 0%;
+      font-size: large;
+      margin-bottom:5%
+    }
+    #singersvg{
+      width:550px;
+      margin-left: -35%;
+      margin-right: 0%;
+      margin-top: -35%;
+      margin-bottom:6%;
+      display: inline-flex;
+      position: absolute;
+      z-index: -1;
+    }
+
+    #leaderhead{
+      font-size: 40px;
+      margin-left: 6%;
+      margin-top: 5%;
+    }
+    #leaderdesc{
+      margin-left: 6%;
+      margin-top: 1%;
+      margin-right:48%;
+      font-size: x-large;
+    }
+    #leaderpic{
+      width:454.31px;
+      margin-left: 60%;
+      margin-top: -45%;
+      margin-bottom:5%;
+      z-index: 1;
+    }
+    #lead{
+      margin-bottom: 2%;
+    }
+    #leadersvg{
+      width:680px;
+      margin-left: -48%;
+      margin-right: 0%;
+      margin-top: -38%;
+      margin-bottom:5%;
+      display: inline-flex;
+      position: absolute;
+      z-index: -1;
+    }
+
+    #studenthead{
+      font-size: 40px;
+      margin-left: 55%;
+      margin-top: 5%;
+    }
+    #studentdesc{
+      margin-left:55%;
+      margin-top: 1%;
+      font-size: x-large;
+      margin-right: 5%;
+    }
+    #studentpic{
+      width:504.31px;
+      margin-top: -41%;
+      margin-bottom:-3%;
+      z-index: 1;
+    }
+    #stud{
+      margin-left: 0%;
+      font-size: large;
+      margin-bottom:5%
+    }
+    #studentsvg{
+      width:490px;
+      margin-left: -35%;
+      margin-right: 0%;
+      margin-top: -25%;
+      margin-bottom:5%;
+      display: inline-flex;
+      position: absolute;
+      z-index: -1;
+    }
+
+    #hbhead{
+      font-size: 40px;
+      margin-left: 6%;
+      margin-top: 5%;
+    }
+    #hbdesc{
+      margin-left: 6%;
+      margin-top: 1%;
+      margin-right:48%;
+      font-size: x-large;
+    }
+    #hbpic{
+      width:504.31px;
+      margin-left: 55%;
+      margin-top: -60%;
+      margin-bottom:10%;
+      z-index: 1;
+    }
+    #hum{
+      margin-bottom: 2%;
+    }
+    #hbsvg{
+      width:1080px;
+      margin-left: -45%;
+      margin-right: 0%;
+      margin-top: -42.5%;
+      margin-bottom:5%;
+      display: inline-flex;
+      position: absolute;
+      z-index: -1;
+    }
+    #hbsvg2{
+      width:178px;
+      margin-left: -24%;
+      margin-right: 3%;
+      margin-top: -12%;
+      margin-bottom:0%;
+      display: inline-flex;
+      position: absolute;
+      z-index: -1;
+    }
+    #testhead{
+      font-size: 40px;
+      margin-left: 11%;
+      margin-top: 5%;
+    }
+    .test1{
+      margin-left: 11%;
+      margin-top: 1%;
+      margin-right:5%;
+      font-size: x-large;
+      margin-bottom: 3%;
+    }
+    .test2{
+      margin-left: 11%;
+      margin-top: -2%;
+      margin-right:5%;
+      margin-bottom: 3%;
+      font-size: x-large;
+    }
+    #testimg{
+      display: inline-flex;
+      width: 40%;
+      margin-top:-60% ;
+      margin-bottom: 1%;
+      margin-left: 68%;
+    }
+
+    #footer{
+      margin-bottom: -2%;
+      margin-top: 2%;
+      padding-bottom: 4%;
+      background-color: #22C6C6;
+      width: 100%;
+      margin-left: 0%;
+      padding-left: 0%;
+      padding-top: 2%;
+      margin-right: 0%;
+      display: block;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+   
+    #footname{
+      margin-left: 6%;
+      text-align: left;
+      font-size: 40px;
+      margin-top: 5%;
+      
+    }
+    .footcon{
+      text-align: center;
+      line-height: 1px;
+      margin-top: -9%;
+      margin-left: 68%;
+    }
+    #conicon{
+      width: 4%;
+    }
+    #foot1{
+      font-size: 25px;
+    }
+    #foot2{
+      font-size: 35px;
+      margin-top: 2%;
+    }
+    #myBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      width: 3%;
+      border-width: 20px black;
+      outline: none;
+      background-color:  #FFFFFF;
+      color: white;
+      cursor: pointer;
+      padding-top: 2px;
+      border-radius: 500px;
+    }
+    
+    #myBtn:hover {
+      background-color:#22C6C6;
+    }
+    
+    #igblack{
+      margin-left: 61.5%;
+      margin-top: -1%;
+      width: 38.73px;
+    margin-right: 0%;
+    margin-bottom: 0.4%;
+    }
+    #gmailblack{
+      margin-right: -4.5%;
+      margin-left: 2%;
+      height:48.73px;
+      margin-bottom: 0%;
+    }
+    #igblack:hover{
+      transform: scale(1.2);
+      transition: ease-in-out;
+    }
+    #gmailblack:hover{
+      transform: scale(1.2);
+      transition: ease-in-out;
+    }
+  }
